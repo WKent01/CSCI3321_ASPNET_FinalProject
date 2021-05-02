@@ -22,7 +22,6 @@ namespace CSCI3321_ASPNET_FinalProject
             conn.ConnectionString = WebConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
 
 
-            //Insert values into publishers (Publisher Name, Address, City, Postal Code, Country, Phone Number)
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandText = String.Format("INSERT INTO Authors VALUES('{0}', '{1}', '{2}', '{3}')",
