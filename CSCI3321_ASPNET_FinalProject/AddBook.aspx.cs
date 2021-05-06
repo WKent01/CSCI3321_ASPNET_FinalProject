@@ -62,13 +62,14 @@ namespace CSCI3321_ASPNET_FinalProject
             }
             genreReader.Close();
 
-            cmdBook.CommandText = String.Format("INSERT INTO Books VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', NULL)",
+            cmdBook.CommandText = String.Format("INSERT INTO Books VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
                 txtBookTitle.Text,
                 authorID,
                 txtPrice.Text,
                 txtPublishDate.Text,
                 publisherID,
-                genreID);
+                genreID,
+                txtWordCount.Text);
 
             cmdBook.ExecuteNonQuery();
             conn.Close();

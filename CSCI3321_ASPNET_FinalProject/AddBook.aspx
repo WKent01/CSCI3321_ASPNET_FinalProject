@@ -65,6 +65,16 @@
             <asp:SqlDataSource ID="sdsGenres" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnectionString %>" ProviderName="<%$ ConnectionStrings:DBConnectionString.ProviderName %>" SelectCommand="SELECT GenreID, GenreName FROM Genres"></asp:SqlDataSource>
         </div>
 
+        <div class="col-md-3">
+            Word Count:
+
+        </div>
+        <div class="col-md-9">
+            
+            <asp:TextBox ID="txtWordCount" runat="server" CssClass="form-control"></asp:TextBox>
+            
+        </div>
+
         <div class="col-md-12">
             <asp:Button ID="btnAddBook" runat="server" Text="Add Book" OnClick="btnAddBook_Click"/>
         </div>
