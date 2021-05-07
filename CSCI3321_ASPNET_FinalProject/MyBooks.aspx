@@ -13,7 +13,6 @@
             <asp:TableHeaderCell>Publisher</asp:TableHeaderCell>
             <asp:TableHeaderCell>Genre</asp:TableHeaderCell>
             <asp:TableHeaderCell>Word Count</asp:TableHeaderCell>
-            <asp:TableHeaderCell></asp:TableHeaderCell>
         </asp:TableHeaderRow>
     </asp:Table>
 </asp:Content>

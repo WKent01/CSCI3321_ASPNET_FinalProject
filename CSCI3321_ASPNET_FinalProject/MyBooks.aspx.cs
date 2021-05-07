@@ -71,6 +71,7 @@ namespace CSCI3321_ASPNET_FinalProject
                     tc.Text = reader["Title"].ToString();
                     tr.Cells.Add(tc);
 
+                    
                     SqlDataReader authorReader = cmdAuthor.ExecuteReader();
                     if (authorReader.HasRows)
                     {
@@ -120,8 +121,11 @@ namespace CSCI3321_ASPNET_FinalProject
                     tc = new TableCell();
                     tc.Text = reader["WordCount"].ToString();
                     tr.Cells.Add(tc);
+                    
 
                     tblBooks.Rows.Add(tr);
+                    tr = new TableRow();
+                    tc = new TableCell();
                 }
             }
 
